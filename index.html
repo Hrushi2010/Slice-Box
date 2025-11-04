@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Slice Box | Freshly Cut Fruits Delivered</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-green': '#1E6F5C',
+                        'brand-light': '#E8F5E9',
+                        'brand-coral': '#FFAB91',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Use Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the fruit icon/logo */
+        /* Removed custom SVG styles since we are using the JPEG logo */
+    </style>
+</head>
+<body class="bg-brand-light font-sans text-gray-800">
+
+    <!-- Header / Navigation -->
+    <!-- <header class="py-4 bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <img 
+                src="uploaded:Gemini_Generated_Image_c8xiz7c8xiz7c8xi.jpg-52fd8050-12df-4c66-8711-e9595b08cec9" 
+                alt="The Slice Box Logo - Fresh Sliced Fruit Icon" 
+                class="h-10 w-auto object-contain"
+                onerror="this.onerror=null; this.src='https://placehold.co/100x40/1E6F5C/FFFFFF?text=Logo';"
+            >
+        </div>
+    </header> -->
+    
+
+    <!-- Hero Section - NOW INCLUDES THE NEW LOGO IMAGE -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        <div class="text-center mb-16">
+            
+            <!-- NEW LOGO IMAGE - Larger display -->
+            <div class="flex justify-center mb-6">
+                <!-- IMPORTANT: Using the uploaded image file name here -->
+                <img 
+                    src="Gemini_Generated_Image_c8xiz7c8xiz7c8xi.png" 
+                    alt="The Slice Box Logo - Fresh Sliced Fruit Icon" 
+                    class="w-48 h-auto object-contain rounded-lg shadow-xl"
+                    onerror="this.onerror=null; this.src='https://placehold.co/192x192/1E6F5C/FFFFFF?text=Logo+Error'"
+                >
+            </div>
+            <!-- /NEW LOGO IMAGE -->
+
+            <!-- Replaced the H2 with the brand name in a slightly smaller size now that the logo image is large -->
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-green mb-4 leading-tight">
+                THE SLICE BOX
+            </h2>
+            
+            <!-- Tagline retained from the previous version -->
+            <p class="text-xl sm:text-2xl text-gray-600 font-medium italic">
+                Freshly Cut Fruits Delivered to Your Doorstep: A healthy start for a healthy day.
+            </p>
+
+            <a href="#plans" class="mt-8 inline-block px-8 py-3 bg-brand-green text-white font-semibold rounded-full shadow-lg hover:bg-opacity-90 transition duration-300 transform hover:scale-105">
+                View Our Monthly Plans
+            </a>
+        </div>
+
+        <!-- Offerings Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mt-12">
+            <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-brand-green">
+                <div class="text-3xl text-brand-green mb-3">🕒</div>
+                <h3 class="text-xl font-bold mb-2">Maximum Freshness</h3>
+                <p class="text-gray-600">Fruits are cut and packed just hours before delivery, guaranteeing taste and nutrition.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-brand-green">
+                <div class="text-3xl text-brand-green mb-3">📦</div>
+                <h3 class="text-xl font-bold mb-2">Ultimate Convenience</h3>
+                <p class="text-gray-600">Zero prep, zero mess. Get perfectly portioned, ready-to-eat fruit boxes delivered daily.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-brand-green">
+                <div class="text-3xl text-brand-green mb-3">🍎</div>
+                <h3 class="text-xl font-bold mb-2">Seasonal Variety</h3>
+                <p class="text-gray-600">Enjoy a curated selection of the best seasonal fruits every month for diverse nutrition.</p>
+            </div>
+        </div>
+
+
+        <!-- Pricing Plans Section -->
+        <section id="plans" class="mt-20">
+            <h2 class="text-3xl font-bold text-center text-brand-green mb-10">Choose Your Healthy Start</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                <!-- Basic Plan Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-2xl border-4 border-brand-green transform hover:scale-[1.02] transition duration-300">
+                    <h3 class="text-2xl font-extrabold text-brand-green mb-2">Basic Plan</h3>
+                    <!-- Updated Description -->
+                    <p class="text-gray-500 mb-6">Freshly sliced fruits in variety.</p>
+
+                    <div class="text-5xl font-extrabold mb-4">
+                        ₹1499<span class="text-xl font-medium text-gray-500"> / month</span>
+                    </div>
+
+                    <ul class="space-y-3 text-lg mb-8">
+                        <!-- Updated to Daily Delivery -->
+                        <li class="flex items-center"><span class="text-brand-green mr-3">✓</span> **Daily Delivery** (30 boxes per month)</li>
+                        <li class="flex items-center"><span class="text-brand-green mr-3">✓</span> Standard Box Size with Sliced Fruits</li>
+                        <li class="flex items-center"><span class="text-brand-green mr-3">✓</span> 3-4 Seasonal Fruit Varieties</li>
+                    </ul>
+
+                    <a href="https://wa.me/918600826888?text=I%20am%20interested%20in%20the%20Basic%20Plan%20(%E2%82%B91499)." target="_blank" class="block w-full text-center py-3 bg-brand-green text-white font-bold rounded-xl shadow-md hover:bg-opacity-90">
+                        Select Basic Plan
+                    </a>
+                </div>
+
+                <!-- Premium Plan Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-2xl border-4 border-brand-coral transform hover:scale-[1.02] transition duration-300">
+                    <span class="absolute top-0 right-0 -mt-4 -mr-4 bg-brand-coral text-white text-xs font-bold px-3 py-1 rounded-full uppercase shadow-md">Best Value</span>
+                    <h3 class="text-2xl font-extrabold text-brand-coral mb-2">Premium Plan</h3>
+                    <!-- Updated Description -->
+                    <p class="text-gray-500 mb-6">Our premium box features an expanded range of specialty healthy additions.</p>
+
+                    <div class="text-5xl font-extrabold mb-4">
+                        ₹1899<span class="text-xl font-medium text-gray-500"> / month</span>
+                    </div>
+
+                    <ul class="space-y-3 text-lg mb-8">
+                        <!-- Updated to Daily Delivery -->
+                        <li class="flex items-center"><span class="text-brand-coral mr-3">✓</span> **Daily Delivery** (30 boxes per month)</li>
+                        <li class="flex items-center"><span class="text-brand-coral mr-3">✓</span> Fruits with **Exotic Varieties** Included</li>
+                        <li class="flex items-center"><span class="text-brand-coral mr-3">✓</span> **Sprouts and Dry Fruits** Inclusion</li>
+                        <li class="flex items-center"><span class="text-brand-coral mr-3">✓</span> Large Box Size with Customizable Preference</li>
+                    </ul>
+
+                    <a href="https://wa.me/918600826888?text=I%20am%20interested%20in%20the%20Premium%20Plan%20(%E2%82%B91899)." target="_blank" class="block w-full text-center py-3 bg-brand-coral text-white font-bold rounded-xl shadow-md hover:bg-opacity-90">
+                        Select Premium Plan
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / Contact Section -->
+    <footer class="bg-brand-green mt-16 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h3 class="text-2xl font-bold mb-3">Ready to start your healthy day?</h3>
+            <p class="text-lg mb-4">Contact us via WhatsApp to place your order or ask any questions.</p>
+
+            <a href="https://wa.me/918600826888" target="_blank" class="inline-flex items-center px-6 py-3 bg-white text-brand-green font-bold rounded-full shadow-xl hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                <!-- WhatsApp Icon SVG (simplified) -->
+                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.002 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12.002 0zm5.228 17.5l-1.39-4.24c-.066-.197-.197-.3-.404-.404l-3.32-1.66c-.197-.1-.404-.132-.611-.066L9.6 11.23c-.197.1-.263.263-.197.46l.789 2.14c.066.197.033.404-.066.611l-1.74 1.74c-.164.164-.328.263-.492.328l-1.97-.686c-.197-.066-.404-.066-.611.033l-1.423.85c-.066.033-.132.066-.197.066s-.132 0-.197-.033c-.197-.033-.36-.066-.492-.197l-.686-1.05c-.132-.197-.132-.404 0-.611l.789-1.97c.066-.197.033-.404-.066-.611L6.71 10.1c-.066-.132-.197-.23-.328-.296l-1.97-.754c-.197-.066-.404-.033-.57.066l-1.39 1.49c-.197.197-.263.46-.23.723l.132 1.423c.066.197.197.328.394.46l2.14 1.258c.197.132.404.23.611.263l1.838.296c.263.033.526-.066.723-.23l3.32-3.32c.164-.164.328-.296.492-.328l2.272-1.026c.197-.066.404-.033.611.066l1.29 1.125c.132.132.197.328.164.526l-.296 2.07c-.033.197.033.404.164.57l1.74 1.74c.164.164.36.263.57.296l1.74.23c.263.033.526-.066.723-.23l1.39-1.49c.197-.197.263-.46.23-.723l-.132-1.423c-.066-.197-.197-.328-.394-.46l-2.14-1.258c-.197-.132-.404-.23-.611-.263l-1.838-.296c-.263-.033-.526.066-.723.23l-3.32 3.32z"/>
+                </svg>
+                Chat on WhatsApp: 8600826888
+            </a>
+            <p class="mt-4 text-sm text-brand-light opacity-75">&copy; 2024 The Slice Box. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
